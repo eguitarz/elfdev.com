@@ -1,21 +1,29 @@
 source 'https://rubygems.org'
 
-gem 'locomotivecms_wagon'
+gem 'rails', '4.0.1'
+gem 'sqlite3'
+gem 'sass-rails', '~> 4.0.0'
+gem 'haml-rails'
+gem 'uglifier', '>= 1.3.0'
+gem 'coffee-rails', '~> 4.0.0'
+gem 'jquery-rails'
+gem 'turbolinks'
+gem 'jbuilder', '~> 1.2'
+gem 'twitter-bootstrap-rails'
 
-group :development do
-  # Mac OS X
-  gem 'rb-fsevent', '~> 0.9.1', require: RUBY_PLATFORM.include?('darwin') && 'rb-fsevent'
-
-  # Unix
-  gem 'therubyracer', require: 'v8', platforms: :ruby
-  gem 'rb-inotify', '~> 0.9', require: RUBY_PLATFORM.include?('linux') && 'rb-inotify'
-
-  # Windows
-  gem 'wdm', '>= 0.1.0', require: RUBY_PLATFORM =~ /mswin|mingw/i && 'wdm'
+group :doc do
+  # bundle exec rake doc:rails generates the API under doc/api.
+  gem 'sdoc', require: false
 end
 
-group :misc do
-  # Add your extra gems here
-  # gem 'susy', require: 'susy'
-  # gem 'redcarpet', require: 'redcarpet'
-end
+# Use ActiveModel has_secure_password
+# gem 'bcrypt-ruby', '~> 3.1.2'
+
+# Use unicorn as the app server
+# gem 'unicorn'
+
+# Use Capistrano for deployment
+# gem 'capistrano', group: :development
+
+# Use debugger
+# gem 'debugger', group: [:development, :test]
