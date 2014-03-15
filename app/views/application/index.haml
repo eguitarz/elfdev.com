@@ -1,4 +1,4 @@
-.banner.text-center
+.container-fluid.banner.text-center.full-height
 	.logo
 		.fa.fa-plus.fa-5x
 	%h1.sans.website-title Elfdev
@@ -9,7 +9,7 @@
 			Our goal is building efficient tools for enterprises. 
 			%br
 			Our solutions include Custom Applications, Web Services, Customer Relationship Management and Data Analytics System.
-.banner.text-center
+.container-fluid.banner.text-center.full-height.bg-green
 	.row
 		%h1.serif.col-md-12 Our Products
 	.products
@@ -35,10 +35,13 @@
 			.col-md-6.text-left.col-md-offset-3
 				Tell us your ideas, we are happy to carry it out!
 
-.banner.text-center
+.container-fluid.banner.text-center
 	.row
 		.contact-column.col-md-5.col-md-offset-2.bg-transparent
 			.fa.fa-lemon-o.fa-5x.fg.fa-spin
+			.row
+				%h3.col-md-12.text-center
+					Have any questions?
 			.row
 				.col-md-12
 					%a{href:contact_path}

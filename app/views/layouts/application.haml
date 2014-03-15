@@ -12,7 +12,8 @@
 				= link_to '<div class="fa fa-home fa-lg"></div>'.html_safe, '/', title:"Contact us"
 			%li
 				= link_to '<div class="fa fa-phone-square fa-lg"></div>'.html_safe, '#', title:"Contact us"
-	.container-fluid.full-height
-		= yield
-		%footer
-			Elfdev 2014
+	= yield
+	.container-fluid
+		%footer.row
+			.col-md-12
+				Elfdev 2014
