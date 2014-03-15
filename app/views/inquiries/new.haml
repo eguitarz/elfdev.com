@@ -1,0 +1,76 @@
+.contact
+	.row
+		%h1.col-md-10.col-md-offset-2
+			Contact us
+	.row
+		.col-md-10.col-md-offset-2
+			=form_for @inquiry do |f|
+				.row
+					%h3.title.col-md-12
+						What can we do for you? *
+				.row
+					.col-md-12
+						%input{type:'checkbox',name:'purpose[website]',value:'yes'}
+						= " Build a website / web service"
+				.row
+					.col-md-12
+						%input{type:'checkbox',name:'purpose[crm]',value:'yes'}
+						= " Build Customer Relationshop Management (CRM) tool"
+				.row
+					.col-md-12
+						%input{type:'checkbox',name:'purpose[datamining]',value:'yes'}
+						= " Offer data mining service (Find the patterns of your data)"
+				.row
+					.col-md-12
+						%input{type:'checkbox',name:'purpose[consult]',value:'yes'}
+						= " Consult for web services / data mining / architecture"
+				.row
+					.col-md-12
+						%input{type:'checkbox',name:'purpose[other]',value:'yes'}
+						= " Other"
+				.row
+					%h3.title.col-md-12
+						Your budget *
+				.row
+					.col-md-12
+						%input{type:'radio',name:'budget',value:'<15000'}
+						= ' lower than USD $15,000'
+				.row
+					.col-md-12
+						%input{type:'radio',name:'budget',value:'15000~30000'}
+						= ' between USD $15,000 ~ $30,000'
+				.row
+					.col-md-12
+						%input{type:'radio',name:'budget',value:'30000~70000'}
+						= ' between USD $30,000 ~ $70,000'
+				.row
+					.col-md-12
+						%input{type:'radio',name:'budget',value:'>70000'}
+						= ' higher than USD $70,000'
+				.row
+					%h3.title.col-md-12
+						Description *
+				.row
+					.col-md-12
+						= f.text_area :description, cols:'70', rows:'6'
+				.row
+					%h3.title.col-md-12
+						Name *
+				.row
+					.col-md-12
+						= f.text_field :name
+				.row
+					%h3.title.col-md-12
+						Email *
+				.row
+					.col-md-12
+						= f.email_field :email
+				.row
+					%h3.title.col-md-12
+						Phone
+				.row
+					.col-md-12
+						= f.text_field :phone
+				.row
+					.title.col-md-12
+						= f.submit 'Send', class:'btn btn-success'

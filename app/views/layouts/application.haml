@@ -9,7 +9,9 @@
 	.container.fixed
 		%ul.menu
 			%li
-				= link_to '<div class="fa fa-rocket fa-lg"></div><span class="hidden">CONTACT US</span>'.html_safe, '#'
+				= link_to '<div class="fa fa-home fa-lg"></div>'.html_safe, '/', title:"Contact us"
+			%li
+				= link_to '<div class="fa fa-phone-square fa-lg"></div>'.html_safe, '#', title:"Contact us"
 	.container-fluid.full-height
 		= yield
 		%footer
