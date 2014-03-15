@@ -1,5 +1,9 @@
 .contact
 	.row
+		.alert.col-md-10.col-md-offset-2
+			- if alert
+				= alert.join('<br>').html_safe
+	.row
 		%h1.col-md-10.col-md-offset-2
 			Contact us
 	.row

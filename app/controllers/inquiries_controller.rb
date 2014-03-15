@@ -15,8 +15,11 @@ class InquiriesController < ApplicationController
 		@inquiry.budget = params[:budget].to_s
 		if @inquiry.save
 			flash[:notice] = 'Thank you, we will contact you in 24 hours.'
+			redirect_to :root
+		else
+			flash[:alert] = @inquiry.errors.full_messages
+			redirect_to :back
 		end
-		redirect_to :root
 	end
 
 	private
