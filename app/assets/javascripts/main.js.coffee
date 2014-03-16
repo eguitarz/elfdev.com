@@ -8,3 +8,11 @@ $(document).ready ->
 		$('html, body').animate({
 	      scrollTop: $("#products").offset().top
 	  }, 2000);
+
+	$(document).scroll (e)->
+		if $('body').scrollTop() > $('.banner').outerHeight()
+			$('#home').removeClass('transparent')
+			$('#contact').removeClass('transparent')
+		else
+			$('#home').addClass('transparent')
+			$('#contact').addClass('transparent')
