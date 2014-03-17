@@ -10,7 +10,7 @@ $(document).ready ->
 	  }, 2000);
 
 	$(document).scroll (e)->
-		if $('body').scrollTop() > $('.banner').outerHeight()
+		if $('body').scrollTop() >= ($('.banner').outerHeight() || 1)
 			$('#home').removeClass('transparent')
 			$('#contact').removeClass('transparent')
 		else
