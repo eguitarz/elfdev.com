@@ -1,4 +1,4 @@
 elfdev.com
 ==========
 
-The official website for elfdev.com
+The official website of elfdev.com
