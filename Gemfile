@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.1'
 gem 'sass-rails', '~> 4.0.0'
 gem 'haml-rails'
+gem 'pg'
 gem 'rmagick', '>= 2.0.0', :require => 'RMagick'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
@@ -18,10 +19,6 @@ end
 
 group :development do
 	gem 'sqlite3'
-end
-
-group :productio do
-	gem 'pg'
 end
 
 # Use ActiveModel has_secure_password
