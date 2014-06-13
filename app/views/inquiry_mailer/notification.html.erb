@@ -1,0 +1,28 @@
+<html>
+	<body style="font-family:\"Gill Sans\", Helvetica, \"Lucida Grande\"">
+		<table style="background-color: #f7f7f5; padding-top: 30px; padding-right: 30px; padding-left: 30px;">
+		<table style="font-family: 'Myriad Pro', 'Gill Sans', Helvetica, 'Lucida Grande';">
+		<tr><td>
+			<h2>
+				Hi,
+			</h2>
+		<td></tr>
+		<tr><td>
+			<p style="line-height: 22px;">
+				<%= "#{@inquiry.name}" %> has sent you an email:
+			</p>
+		</td></tr>
+		<tr><td>
+			<p style="line-height: 22px;">
+				Name: <%= @inquiry.name %> <br />
+				Email: <%= @inquiry.email %> <br />
+				Phone: <%= @inquiry.phone %> <br />
+				Budget: <%= @inquiry.budget %> <br />
+				Purpose: <%= @inquiry.purpose %> <br />
+				Description: <%= @inquiry.description %> <br />
+			</p>
+		</td></tr>
+		</table>
+		</table>
+	</body>
+</html>
