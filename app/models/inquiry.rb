@@ -1,6 +1,7 @@
 class Inquiry < ActiveRecord::Base
 	validates :name, presence: true
 	validates :description, presence: true
+	validates_length_of :description, :minimum => 10, :maximum => 3000
 	validates :purpose, presence: true
 	validates :email, presence: true
 	validates :budget, presence: true
