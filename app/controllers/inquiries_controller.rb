@@ -18,7 +18,7 @@ class InquiriesController < ApplicationController
 			redirect_to :root
 		else
 			flash[:alert] = @inquiry.errors.full_messages
-			redirect_to :back
+			render :new
 		end
 	end
 
